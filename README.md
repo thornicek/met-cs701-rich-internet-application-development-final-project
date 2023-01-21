@@ -27,7 +27,7 @@ npm install
 # Install angular/common in order to get location and enable the "back" button to work
 @angular/common -> npm install @angular/common 
 
-# install in memory web api to simulate the server
+# Install in memory web api to simulate the server
 npm install angular-in-memory-web-api --save
 
 # Install rxjs to implement and work with observable type
