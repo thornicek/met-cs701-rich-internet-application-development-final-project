@@ -1,36 +1,36 @@
-# mealPlanCalculator
+# MealPlanCalculator
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 The goal of my application is for it to be used as a meal scheduling application, for people that are looking to lose/gain weight.
 
-# install in memory API
+# Install in memory API
 npm install angular-in-memory-web-api --save
 
-# packages to download
+# Packages to download
 In order to run the Meal Plan Calculator, install the following packages to your system
 
-# install angular/cli package globally, to start using angular
+# Install angular/cli package globally, to start using angular
 @angular/cli -> npm install -g @angular/cli 
 
-# install node modules
+# Install node modules
 npm install
 
-# install angular/core package for basic features of angular
+# Install angular/core package for basic features of angular
 @angular/core -> npm install @angular/core
 
-# install angular/cdk in project for drag and drop
+# Install angular/cdk in project for drag and drop
 @angular/cdk/drag-drop -> npm install @angular/cdk/drag-drop
 
-# install angular/router for navigation between different components of the app
+# Install angular/router for navigation between different components of the app
 @angular/router -> npm install @angular/router
 
-# install angular/common in order to get location and enable the "back" button to work
+# Install angular/common in order to get location and enable the "back" button to work
 @angular/common -> npm install @angular/common 
 
 # install in memory web api to simulate the server
 npm install angular-in-memory-web-api --save
 
-# install rxjs to implement and work with observable type
+# Install rxjs to implement and work with observable type
 rxjs -> npm i rxjs
 
 # Layout
