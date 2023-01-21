@@ -1,0 +1,5 @@
+div {
+    height: 100vh;
+    background-image: url("./backgroundImage.jpg") ;
+    background-size: cover;
+}   

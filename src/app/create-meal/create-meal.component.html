@@ -1,0 +1,15 @@
+<div class="centerContainer">
+<div class="editContainer">
+    <label for="new-meal">Meal Name: </label>
+    <input id="new-meal" #mealName />
+</div>
+</div>
+<div class="centerContainer">
+<!-- (click) passes input value to add() and then clears the input -->
+<button type="button" class="add-button" (click)="add(mealName.value); mealName.value=''">
+  Add Meal
+</button>
+<button type="button" (click)="goBack()">
+  Go Back
+</button>
+</div>

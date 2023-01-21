@@ -1,0 +1,35 @@
+<!-- manually create form to edit and update the meal object array -->
+<div class="editContainer" *ngIf="meal">
+    <h2>{{meal.name | uppercase}} Details</h2>
+    <div><h5>id: {{meal.id}}</h5></div>
+    <div>
+        <ul>
+        <li>
+            <label for="meal-name">Meal name: </label>
+            <input id="meal-name" [(ngModel)]="meal.name" placeholder="name"> 
+        </li>
+        <li>
+            <label for="meal-protein">Protein(g): </label>
+            <input id="meal-protein" [(ngModel)]="meal.protein" placeholder="protein">
+        </li>
+        <li>
+                <label for="meal-fats">Fats(g): </label>
+                <input id="meal-fats" [(ngModel)]="meal.fats" placeholder="fats">
+            </li>
+        <li>
+                    <label for="meal-carbohydrates">Carbohydrates(g): </label>
+                <input id="meal-carbohydrates" [(ngModel)]="meal.carbohydrates" placeholder="carbohydrates">
+            </li>
+        <li>
+                    <label for="meal-fiber">Fiber(g): </label>
+                <input id="meal-fiber" [(ngModel)]="meal.fiber" placeholder="fiber">
+            </li>
+        <li>
+                    <label for="meal-calories">Meal Calories(kcal): </label>
+                    <input type="number" id="meal-calories" [(ngModel)]="meal.calories" placeholder="calories">
+                </li>
+    </ul>
+    </div>
+    </div>
+    <button type="button" (click)="save()">Save</button>
+    <button type="button" (click)="goBack()">Go Back</button>

@@ -1,0 +1,56 @@
+ <!-- divs to implement flexbox -->
+<div class="grid-container">
+<div class="grid-child">
+<!-- drag Div -->
+<div class="example-container">
+    <h2 class="strokeme" > Meals</h2>
+    <h5 class="strokeme" >(Select a Meal to Edit)</h5>
+    
+    <div
+      cdkDropList
+      #mealList="cdkDropList"
+      [cdkDropListData]="meals"
+      [cdkDropListConnectedTo]="[plannedList]"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let meal of meals" cdkDrag>
+        <a routerLink="/editMeals/{{meal.id}}">  
+        <span class="badge">{{meal.id}}</span> {{meal.name}}
+        </a>
+        <button type="button" class="delete" title="delete meal"
+        (click)="delete(meal)">x</button>
+        </div>
+    </div>
+  </div>
+ 
+</div> 
+
+<!-- target div -->
+<div class="grid-child">
+ 
+    <div class="example-container">
+    <h2 class="strokeme">Meal Plan</h2>
+    
+    <div
+      id="planned"  
+      cdkDropList
+      #plannedList="cdkDropList"
+      [cdkDropListData]="planned"
+      [cdkDropListConnectedTo]="[mealList]"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box"*ngFor="let meal of planned" cdkDrag> 
+    
+            <span class="badge">{{meal.calories}} Calories</span> {{meal.name}}
+            
+    </div>
+  </div>
+  <h2 class="strokeme">Sum of Calories:</h2><h1 class="strokeme">{{ getData() }}</h1>
+  <button (click)="saveData()" class="button">Save Meal Plan</button>
+  <button (click)="removeData()" class="button">Clear Meal Plan</button>
+</div>
+
+</div>
+
+</div>
+<button type="button" (click)="goBack()">Go Back</button>

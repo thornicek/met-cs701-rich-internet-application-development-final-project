@@ -1,0 +1,27 @@
+.editContainer{
+    background-color: rgba(44, 38, 38, 0.4);
+    width: fit-content;
+    
+}
+
+h2, h5, label{
+    color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+}
+input{
+    width: fit-content;
+    font-size: large;
+}
+
+.centerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label, input {
+    font-size: xx-large;
+}
